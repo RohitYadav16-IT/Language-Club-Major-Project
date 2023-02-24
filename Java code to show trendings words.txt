@@ -8,11 +8,8 @@ public class TrendingWords {
     public static void main(String[] args) throws IOException {
         // define the URLs for each language's trending words
         String[] urls = {
-            "https://trends.google.com/trends/trendingsearches/daily?geo=US", // English
-            "https://trends.google.com/trends/trendingsearches/daily?geo=ES", // Spanish
-            "https://trends.google.com/trends/trendingsearches/daily?geo=FR", // French
-            "https://trends.google.com/trends/trendingsearches/daily?geo=DE", // German
-            "https://trends.google.com/trends/trendingsearches/daily?geo=RU", // Russian
+            "https://trends.google.com/trends/trendingsearches/daily?geo=IN", // India
+            "https://trends.google.com/trends/trendingsearches/realtime?geo=IN", // India
         };
         
         // define an array list for each language's trending words
