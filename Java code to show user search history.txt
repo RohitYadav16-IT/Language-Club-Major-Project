@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+
+public class SearchHistory {
+    private ArrayList<String> searchHistory;
+
+    public SearchHistory() {
+        this.searchHistory = new ArrayList<>();
+    }
+
+    public void addSearchQuery(String query) {
+        this.searchHistory.add(query);
+    }
+
+    public void displaySearchHistory() {
+        System.out.println("Search History:");
+        for (String query : this.searchHistory) {
+            System.out.println(query);
+        }
+    }
+}

@@ -1,0 +1,26 @@
+Code to show ranking of user among registered users :- 
+
+# assume scores is a dictionary mapping usernames to scores
+scores = {"user1": 50, "user2": 100, "user3": 75, "user4": 90}
+
+# get the user's score
+username = "user2"
+user_score = scores.get(username)
+
+# sort the scores in descending order
+sorted_scores = sorted(scores.values(), reverse=True)
+
+# find the user's rank
+user_rank = sorted_scores.index(user_score) + 1
+
+# print the user's rank
+print(f"{username} is ranked #{user_rank} among registered users with a score of {user_score}")
+
+
+In this example, the scores dictionary maps usernames to their scores. We assume that the user whose rank we want to find is "user2", but you can replace this with the appropriate username. We get the user's score using the get method.
+
+We then sort the scores in descending order using the sorted function with the reverse=True argument. This gives us a list of scores from highest to lowest.
+
+We then find the user's rank by getting the index of their score in the sorted list of scores using the index method. Since the list is 0-indexed, we add 1 to get the user's rank.
+
+Finally, we print out the user's rank and score using an f-string. You can customize the message to fit your specific use case.
