@@ -6,21 +6,21 @@ import org.jsoup.select.Elements;
 
 public class TrendingWords {
     public static void main(String[] args) throws IOException {
-        // define the URLs for each language's trending words
+        
         String[] urls = {
             "https://trends.google.com/trends/trendingsearches/daily?geo=IN", // India
             "https://trends.google.com/trends/trendingsearches/realtime?geo=IN", // India
         };
         
-        // define an array list for each language's trending words
+        
         ArrayList<String>[] trendingWords = new ArrayList[urls.length];
         
-        // loop through each language's URL and extract the trending words
+        
         for (int i = 0; i < urls.length; i++) {
             Document doc = Jsoup.connect(urls[i]).get();
             Elements words = doc.select(".title");
             
-            // add each trending word to the array list for the language
+          
             trendingWords[i] = new ArrayList<String>();
             for (int j = 0; j < words.size(); j++) {
                 String word = words.get(j).text();
@@ -28,7 +28,7 @@ public class TrendingWords {
             }
         }
         
-        // print the trending words for each language
+       
         for (int i = 0; i < urls.length; i++) {
             System.out.println("Trending words for language " + (i+1) + ":");
             for (String word : trendingWords[i]) {
