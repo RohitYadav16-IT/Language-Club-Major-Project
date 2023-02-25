@@ -2,7 +2,7 @@ import java.util.*;
 
 public class FillInTheBlankQuiz {
     public static void main(String[] args) {
-        // Define the quiz questions and their corresponding answers
+        
         String[] questions = {
             "The capital of France is _________.",
             "The world's largest ocean is the _________.",
@@ -10,16 +10,16 @@ public class FillInTheBlankQuiz {
         };
         String[] answers = {"Paris", "Pacific", "Mount Everest"};
 
-        // Create a list to store the indices of the questions
+        
         ArrayList<Integer> indices = new ArrayList<>();
         for (int i = 0; i < questions.length; i++) {
             indices.add(i);
         }
 
-        // Shuffle the indices to generate a random order for the questions
+        
         Collections.shuffle(indices);
 
-        // Print the questions and get the user's answers
+        
         Scanner scanner = new Scanner(System.in);
         for (int i : indices) {
             System.out.println(questions[i]);
@@ -31,7 +31,7 @@ public class FillInTheBlankQuiz {
             }
         }
 
-        // End the quiz
+       
         System.out.println("Quiz complete.");
     }
 }
