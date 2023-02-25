@@ -8,8 +8,8 @@ public class TrendingWords {
     public static void main(String[] args) throws IOException {
         
         String[] urls = {
-            "https://trends.google.com/trends/trendingsearches/daily?geo=IN", // India
-            "https://trends.google.com/trends/trendingsearches/realtime?geo=IN", // India
+            "https://trends.google.com/trends/trendingsearches/daily?geo=IN",
+            "https://trends.google.com/trends/trendingsearches/realtime?geo=IN",
         };
         
         
