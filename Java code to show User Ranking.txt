@@ -5,7 +5,7 @@ import java.util.List;
 
 public class UserRanking {
 
-    // Example User class with name and score fields
+    
     static class User {
         String name;
         int score;
@@ -17,7 +17,7 @@ public class UserRanking {
     }
 
     public static void main(String[] args) {
-        // Example list of registered users
+        
         List<User> users = new ArrayList<>();
         users.add(new User("Alice", 100));
         users.add(new User("Bob", 80));
@@ -25,10 +25,10 @@ public class UserRanking {
         users.add(new User("David", 70));
         users.add(new User("Eve", 120));
 
-        // Sort the list of users based on their scores
+        
         Collections.sort(users, Comparator.comparingInt(u -> -u.score));
 
-        // Find the index of the current user
+        
         User currentUser = users.get(2); // example user at index 2
         int ranking = users.indexOf(currentUser) + 1;
 
